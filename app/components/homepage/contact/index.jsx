@@ -85,7 +85,7 @@ function ContactSection() {
         <GlowCard identifier={`contact-qr`} >
           <div className="p-2">
             <Image
-              src="/contact-qr.png"
+              src="./contact-qr.png"
               alt="Contact-QR"
               width={290}
               height={290}
