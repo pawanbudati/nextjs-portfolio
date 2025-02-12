@@ -1,6 +1,6 @@
 export const images = process.env.NODE_ENV == 'development'?( 
     {
-    profile: '/profile2.png',
+    profile: '/profilepic.jpg',
     contactQR: '/contact-qr.png',
     selection: '/section.svg',
     blur: '/blur-23.svg',
@@ -9,7 +9,7 @@ export const images = process.env.NODE_ENV == 'development'?(
 }
 ):( 
     {
-        profile: './profile2.png',
+        profile: './profilepic.jpg',
         contactQR: './contact-qr.png',
         selection: './section.svg',
         blur: './blur-23.svg',
