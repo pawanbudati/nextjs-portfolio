@@ -31,7 +31,9 @@ export default function RootLayout({ children }) {
                           bg-clip-padding 
                           backdrop-filter 
                           backdrop-blur-sm bg-opacity-0`
-                          } />
+                      } 
+          />
+          <div className="pt-5"></div>
           {children}
           <ScrollToTop />
         </main>
