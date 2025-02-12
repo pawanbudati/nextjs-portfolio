@@ -2,15 +2,16 @@
 import { educations } from "@/utils/data/educations";
 import Image from "next/image";
 import { BsPersonWorkspace } from "react-icons/bs";
-import lottieFile from '../../../assets/lottie/study.json';
+import lottieFile from '../../../assets/lottie/education_new.json';
 import AnimationLottie from "../../helper/animation-lottie";
 import GlowCard from "../../helper/glow-card";
+import { images } from "@/utils/data/images";
 
 function Education() {
   return (
     <div id="education" className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]">
       <Image
-        src="./section.svg"
+        src={images.selection}
         alt="Hero"
         width={1572}
         height={795}
@@ -35,7 +36,7 @@ function Education() {
       <div className="py-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
           <div className="flex justify-center items-start">
-            <div className="w-3/4 h-3/4">
+            <div className="w-3/5 my-auto">
               <AnimationLottie animationPath={lottieFile} />
             </div>
           </div>
@@ -47,7 +48,7 @@ function Education() {
                   <GlowCard key={education.id} identifier={`education-${education.id}`}>
                     <div className="p-3 relative text-white">
                       <Image
-                        src="./blur-23.svg"
+                        src={images.blur}
                         alt="Hero"
                         width={1080}
                         height={200}

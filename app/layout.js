@@ -21,7 +21,17 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <ToastContainer />
         <main className="min-h-screen relative mx-auto px-6 sm:px-12 lg:max-w-[70rem] xl:max-w-[76rem] 2xl:max-w-[92rem] text-white">
-          <Navbar />
+          <Navbar 
+            styles={{zIndex:100}} 
+            className={  `max-h-16 
+                          w-11/12
+                          fixed 
+                          bg-blue-400 
+                          rounded-md 
+                          bg-clip-padding 
+                          backdrop-filter 
+                          backdrop-blur-sm bg-opacity-0`
+                          } />
           {children}
           <ScrollToTop />
         </main>

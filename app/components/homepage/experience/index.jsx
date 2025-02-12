@@ -3,15 +3,16 @@
 import { experiences } from "@/utils/data/experience";
 import Image from "next/image";
 import { BsArrowUpRightCircleFill, BsPersonWorkspace } from "react-icons/bs";
-import experience from '../../../assets/lottie/code.json';
+import experience from '../../../assets/lottie/development.json';
 import AnimationLottie from "../../helper/animation-lottie";
 import GlowCard from "../../helper/glow-card";
+import { images } from "@/utils/data/images";
 
 function Experience() {
   return (
     <div id="experience" className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]">
       <Image
-        src="./section.svg"
+        src={images.selection}
         alt="Hero"
         width={1572}
         height={795}
@@ -31,7 +32,7 @@ function Experience() {
       <div className="py-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
           <div className="flex justify-center items-start">
-            <div className="w-full h-full">
+            <div className="w-3/5">
               <AnimationLottie animationPath={experience} />
             </div>
           </div>
@@ -43,7 +44,7 @@ function Experience() {
                   <GlowCard key={experience.id} identifier={`experience-${experience.id}`}>
                     <div className="p-3 relative">
                       <Image
-                        src="./blur-23.svg"
+                        src={images.blur}
                         alt="Hero"
                         width={1080}
                         height={200}

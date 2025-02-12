@@ -9,11 +9,16 @@ import { IoLogoGithub, IoMdCall } from "react-icons/io";
 import { MdAlternateEmail } from "react-icons/md";
 import GlowCard from '../../helper/glow-card';
 import Image from 'next/image';
-import ContactForm from './contact-form';
+import { images } from '@/utils/data/images';
 
 function ContactSection() {
   return (
-    <div id="contact" className="my-12 lg:my-16 relative mt-24 text-white">
+    <div id="contact" className="my-12 lg:my-16 relative text-white border-t border-[#25213b]">
+      <div className="flex justify-center -translate-y-[1px] mb-24">
+        <div className="w-3/4">
+          <div className="h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent  w-full" />
+        </div>
+      </div>
       <div className="hidden lg:flex flex-col items-center absolute top-24 -right-8">
         <span className="bg-[#1a1443] w-fit text-white rotate-90 p-2 px-5 text-xl rounded-md">
           CONTACT
@@ -85,7 +90,7 @@ function ContactSection() {
         <GlowCard identifier={`contact-qr`} >
           <div className="p-2">
             <Image
-              src="./contact-qr.png"
+              src={images.contactQR}
               alt="Contact-QR"
               width={290}
               height={290}
